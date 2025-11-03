@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Meu Carrinho - Mathvic Beauty</title>
+  <link rel="stylesheet" href="carrinho.css" />
+</head>
+<body>
+  <header>
+    <h1 class="logo">MATHVIC BEAUTY</h1>
+  </header>
+
+  <main class="container">
+    <h2>Seu Carrinho</h2>
+
+    <div class="produtos">
+      <div class="produto">
+        <img src="https://cdn-icons-png.flaticon.com/512/2974/2974700.png" alt="Elysée Bloom">
+        <div class="info">
+          <h3>Elysée Bloom</h3>
+          <p>R$ 259,90</p>
+          <label>Quantidade:
+            <input type="number" min="0" value="0" class="quantidade" data-preco="259.90">
+          </label>
+        </div>
+      </div>
+
+      <div class="produto">
+        <img src="https://cdn-icons-png.flaticon.com/512/2974/2974700.png" alt="Aurora">
+        <div class="info">
+          <h3>Aurora</h3>
+          <p>R$ 219,90</p>
+          <label>Quantidade:
+            <input type="number" min="0" value="0" class="quantidade" data-preco="219.90">
+          </label>
+        </div>
+      </div>
+
+      <div class="produto">
+        <img src="https://cdn-icons-png.flaticon.com/512/2974/2974700.png" alt="Essence">
+        <div class="info">
+          <h3>Essence</h3>
+          <p>R$ 199,90</p>
+          <label>Quantidade:
+            <input type="number" min="0" value="0" class="quantidade" data-preco="199.90">
+          </label>
+        </div>
+      </div>
+
+      <div class="produto">
+        <img src="https://cdn-icons-png.flaticon.com/512/2974/2974700.png" alt="Prisme">
+        <div class="info">
+          <h3>Prisme</h3>
+          <p>R$ 229,90</p>
+          <label>Quantidade:
+            <input type="number" min="0" value="0" class="quantidade" data-preco="229.90">
+          </label>
+        </div>
+      </div>
+
+      <div class="produto">
+        <img src="https://cdn-icons-png.flaticon.com/512/2974/2974700.png" alt="Vélo Vert">
+        <div class="info">
+          <h3>Vélo Vert</h3>
+          <p>R$ 239,90</p>
+          <label>Quantidade:
+            <input type="number" min="0" value="0" class="quantidade" data-preco="239.90">
+          </label>
+        </div>
+      </div>
+
+      <div class="produto">
+        <img src="https://cdn-icons-png.flaticon.com/512/2974/2974700.png" alt="Purea-Fluir">
+        <div class="info">
+          <h3>Purea-Fluir</h3>
+          <p>R$ 189,90</p>
+          <label>Quantidade:
+            <input type="number" min="0" value="0" class="quantidade" data-preco="189.90">
+          </label>
+        </div>
+      </div>
+
+      <div class="produto">
+        <img src="https://cdn-icons-png.flaticon.com/512/2974/2974700.png" alt="Unité">
+        <div class="info">
+          <h3>Unité</h3>
+          <p>R$ 209,90</p>
+          <label>Quantidade:
+            <input type="number" min="0" value="0" class="quantidade" data-preco="209.90">
+          </label>
+        </div>
+      </div>
+
+      <div class="produto">
+        <img src="https://cdn-icons-png.flaticon.com/512/2974/2974700.png" alt="Íris Livre">
+        <div class="info">
+          <h3>Íris Livre</h3>
+          <p>R$ 219,90</p>
+          <label>Quantidade:
+            <input type="number" min="0" value="0" class="quantidade" data-preco="219.90">
+          </label>
+        </div>
+      </div>
+
+      <div class="produto">
+        <img src="https://cdn-icons-png.flaticon.com/512/2974/2974700.png" alt="Allurex">
+        <div class="info">
+          <h3>Allurex</h3>
+          <p>R$ 199,90</p>
+          <label>Quantidade:
+            <input type="number" min="0" value="0" class="quantidade" data-preco="199.90">
+          </label>
+        </div>
+      </div>
+
+      <div class="produto">
+        <img src="https://cdn-icons-png.flaticon.com/512/2974/2974700.png" alt="MV Essence">
+        <div class="info">
+          <h3>MV Essence</h3>
+          <p>R$ 249,90</p>
+          <label>Quantidade:
+            <input type="number" min="0" value="0" class="quantidade" data-preco="249.90">
+          </label>
+        </div>
+      </div>
+
+      <div class="produto">
+        <img src="https://cdn-icons-png.flaticon.com/512/2974/2974700.png" alt="Victoire">
+        <div class="info">
+          <h3>Victoire</h3>
+          <p>R$ 229,90</p>
+          <label>Quantidade:
+            <input type="number" min="0" value="0" class="quantidade" data-preco="229.90">
+          </label>
+        </div>
+      </div>
+
+      <div class="produto">
+        <img src="https://cdn-icons-png.flaticon.com/512/2974/2974700.png" alt="Mathic Glow">
+        <div class="info">
+          <h3>Mathic Glow</h3>
+          <p>R$ 219,90</p>
+          <label>Quantidade:
+            <input type="number" min="0" value="0" class="quantidade" data-preco="219.90">
+          </label>
+        </div>
+      </div>
+    </div>
+
+    <div class="total">
+      <p>Total: <strong id="valor-total">R$ 0,00</strong></p>
+    </div>
+
+    <button id="finalizar">Finalizar Compra</button>
+  </main>
+
+  <script>
+    const inputs = document.querySelectorAll('.quantidade');
+    const totalElement = document.getElementById('valor-total');
+    const finalizarBtn = document.getElementById('finalizar');
+
+    function atualizarTotal() {
+      let total = 0;
+      inputs.forEach(input => {
+        const preco = parseFloat(input.dataset.preco);
+        const qtd = parseInt(input.value) || 0;
+        total += preco * qtd;
+      });
+      totalElement.textContent = `R$ ${total.toFixed(2).replace('.', ',')}`;
+    }
+
+    inputs.forEach(input => {
+      input.addEventListener('input', atualizarTotal);
+    });
+
+    finalizarBtn.addEventListener('click', () => {
+      const carrinho = [];
+      inputs.forEach(input => {
+        const qtd = parseInt(input.value);
+        if (qtd > 0) {
+          const nome = input.closest('.produto').querySelector('h3').textContent;
+          const preco = parseFloat(input.dataset.preco);
+          carrinho.push({ nome, preco, qtd });
+        }
+      });
+
+      localStorage.setItem('carrinho', JSON.stringify(carrinho));
+      window.location.href = "comprar.html";
+    });
+  </script>
+</body>
+</html>
+

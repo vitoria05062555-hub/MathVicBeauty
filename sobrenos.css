@@ -1,0 +1,106 @@
+/* ==================== CORES PRINCIPAIS ==================== */
+:root {
+  --azul: #A3CEF1;
+  --roxo: #C7B3E3;
+  --rosa: #F7D1DC;
+  --branco: #ffffff;
+  --preto: #1f1f1f;
+}
+
+/* ==================== GERAL ==================== */
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(180deg, var(--rosa) 0%, var(--azul) 100%);
+  color: var(--preto);
+  margin: 0;
+  padding: 0;
+}
+
+/* ==================== CONTAINER PRINCIPAL ==================== */
+.sobre-nos {
+  max-width: 900px;
+  background-color: rgba(255, 255, 255, 0.85);
+  margin: 80px auto;
+  padding: 60px;
+  border-radius: 30px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+/* ==================== TÍTULO ==================== */
+.sobre-nos h1 {
+  font-size: 2.5rem;
+  background: linear-gradient(90deg, var(--azul), var(--roxo));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 800;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+/* ==================== DECORAÇÃO FLORAL ==================== */
+.decoracao {
+  font-size: 1.5rem;
+  color: var(--roxo);
+  margin-bottom: 15px;
+}
+
+/* ==================== TEXTO ==================== */
+.sobre-nos p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #333;
+  margin-bottom: 25px;
+}
+
+/* ==================== GALERIA DE IMAGENS ==================== */
+.galeria {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin-top: 40px;
+}
+
+.galeria img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.galeria img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* ==================== ANIMAÇÃO ==================== */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ==================== RESPONSIVO ==================== */
+@media (max-width: 768px) {
+  .sobre-nos {
+    padding: 40px 25px;
+  }
+
+  .sobre-nos h1 {
+    font-size: 2rem;
+  }
+
+  .galeria img {
+    width: 200px;
+    height: 200px;
+  }
+}
