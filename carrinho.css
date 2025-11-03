@@ -1,0 +1,103 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #f9c5d1, #c8b6ff);
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+}
+
+.logo {
+  color: #b49dd9;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.container {
+  background-color: #fff;
+  max-width: 700px;
+  margin: 30px auto;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  color: #9b7ed9;
+  margin-bottom: 20px;
+}
+
+.produtos {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.produto {
+  display: flex;
+  align-items: center;
+  background-color: #f8f4ff;
+  padding: 10px 15px;
+  border-radius: 15px;
+}
+
+.produto img {
+  width: 60px;
+  height: 60px;
+  margin-right: 15px;
+}
+
+.info h3 {
+  color: #a27be3;
+  margin: 0;
+}
+
+.info p {
+  margin: 5px 0;
+  font-weight: 600;
+}
+
+label {
+  font-size: 14px;
+}
+
+input[type="number"] {
+  width: 50px;
+  margin-left: 5px;
+  padding: 4px;
+  border-radius: 8px;
+  border: 1px solid #c9b9ff;
+  text-align: center;
+}
+
+.total {
+  background-color: #f0e5ff;
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 10px;
+  font-size: 18px;
+  color: #7c4fd6;
+}
+
+button {
+  display: block;
+  width: 100%;
+  background-color: #a27be3;
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  padding: 12px;
+  margin-top: 20px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #8b67d9;
+}
