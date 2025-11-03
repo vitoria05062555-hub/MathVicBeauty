@@ -19,7 +19,7 @@ body {
 .navbar {
   position: sticky;
   top: 0;
-  width: 100%;
+  width: 91%;
   z-index: 1000;
   background: linear-gradient(90deg, var(--rosa), var(--roxo), var(--azul));
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
